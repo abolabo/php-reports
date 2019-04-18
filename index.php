@@ -10,10 +10,16 @@ session_start();
 ini_set('max_execution_time', 300);
 
 //sets up autoloading of composer dependencies
-include 'vendor/autoload.php';
+if(is_file(__DIR__.'/vendor/autoload.php')) {
+    require_once 'vendor/autoload.php';
+}
+elseif(is_file(dirname(__DIR__,2).'/autoload.php')){
+    require_once dirname(__DIR__,2).'/autoload.php';
+}
 
 //sets up autoload (looks in classes/local/, classes/, and lib/ in that order)
-require 'lib/PhpReports/PhpReports.php';
+require __DIR__.'/lib/PhpReports/PhpReports.php';
+PhpReports::init(__DIR__.'/config/config.php');
 
 header("Access-Control-Allow-Origin: *");
 

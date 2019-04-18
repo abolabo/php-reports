@@ -18,11 +18,13 @@
         "mikecao/flight": "dev-master",
         "jdorn/sql-formatter": "dev-master",
         "jdorn/file-system-cache": "dev-master",
-        "phpoffice/phpexcel": "dev-develop",
-        "adodb/adodb-php": "dev-master",
-        "lespoilus/spyc": "dev-master",
-        "google/apiclient": "1.0.*@beta",
-        "alcaeus/mongo-php-adapter": "^1.1@dev"
+        "adodb/adodb-php": "^5.20",
+        "lespoilus/spyc": "dev-master"
+    },
+    "suggest": {
+        "google/apiclient": "Allows to use Google Analytics code",
+        "alcaeus/mongo-php-adapter": "MongoDB adapter for mongodb reports",
+        "phpoffice/phpspreadsheet": "Use it to export report into Excel-file"
     },
     "autoload": {
         "files": [

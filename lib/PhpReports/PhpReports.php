@@ -1,4 +1,5 @@
 <?php
+
 class PhpReports {
 	public static $config;
 	public static $request;
@@ -679,4 +680,4 @@ class PhpReports {
 		return $output;
 	}
 }
-PhpReports::init();
+

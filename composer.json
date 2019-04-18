@@ -26,6 +26,11 @@
         "alcaeus/mongo-php-adapter": "MongoDB adapter for mongodb reports",
         "phpoffice/phpspreadsheet": "Use it to export report into Excel-file"
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        }
+    },
     "autoload": {
         "files": [
             "lib/adodb/pivottable.inc.php"

@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": ">=5.3",
+        "php": ">=7.0",
         "ext-pdo": "*",
         "twig/twig": "1.*",
         "swiftmailer/swiftmailer": "5.*",
@@ -32,12 +32,11 @@
         }
     },
     "autoload": {
-        "files": [
-            "lib/adodb/pivottable.inc.php"
-        ],
-        "classmap": [
-            "vendor/jdorn/file-system-cache/"
-        ]
+        "psr-4": {
+            "\\PhpReports": ""
+        },
+        "classmap": [ "vendor/jdorn/file-system-cache/" ],
+
     },
     "minimum-stability": "dev"
 }

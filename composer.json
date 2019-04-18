@@ -32,11 +32,8 @@
         }
     },
     "autoload": {
-        "psr-4": {
-            "\\PhpReports": ""
-        },
-        "classmap": [ "vendor/jdorn/file-system-cache/" ],
-
+        "files": ["lib/PhpReports/PhpReports.php"],
+        "classmap": [ "vendor/jdorn/file-system-cache/" ]
     },
     "minimum-stability": "dev"
 }
